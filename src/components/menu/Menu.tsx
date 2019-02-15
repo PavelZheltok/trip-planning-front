@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { createStyles, withStyles, WithStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-// import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -36,7 +35,7 @@ export interface State {
     anchorEl: null | HTMLElement;
 }
 
-class MyMenu extends React.Component<Props, State> {
+class TripMenu extends React.Component<Props, State> {
     render() {
         return (
             <AppBar position="static">
@@ -56,8 +55,8 @@ class MyMenu extends React.Component<Props, State> {
     }
 }
 
-(MyMenu as React.ComponentClass<Props>).propTypes = {
+(TripMenu as React.ComponentClass<Props>).propTypes = {
     classes: PropTypes.object.isRequired,
 } as any;
 
-export default withStyles(styles)(MyMenu);
+export default withStyles(styles)(TripMenu);
